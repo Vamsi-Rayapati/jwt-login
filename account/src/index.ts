@@ -23,7 +23,7 @@ app.get('/', (req: Request, res: Response) => {
 });
 
 //routes
-app.use('/auth/api/v1', router);
+app.use('/account/api/v1', router);
 
 // error handling 
 

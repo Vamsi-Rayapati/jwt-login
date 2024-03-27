@@ -2,6 +2,7 @@ import Lottie from 'react-lottie'
 
 import animationData from '../../assets/animations/communication_animation.json';
 import { Button, Card, Checkbox, Form, Input } from 'antd';
+import './LoginScreen.css';
 
 function LoginScreen() {
     const defaultOptions = {
