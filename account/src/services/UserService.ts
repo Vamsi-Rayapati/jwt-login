@@ -1,11 +1,11 @@
-import { Request, Response } from "express";
-import {User} from 'mysql/models/account';
+import {User} from 'mysql/account/models';
+
 async function register(name: string, email: string,password: string) {
     try{
-        const user1 = await User.create({name: name, email: email, password: password});
+        const user1 = await User.create({name: name, email: email});
         return user1;
     } catch(err) {
-        throw Error('Failed to create user');
+        throw Error('Failed to create user'+err);
     }
     
 }
